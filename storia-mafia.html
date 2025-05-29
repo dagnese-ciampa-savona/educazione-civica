@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storia della Mafia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Legalità & Giustizia</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="storia-mafia.html" class="active">Storia</a></li>
+                <li><a href="ecomafie.html">Ecomafie</a></li>
+                <li><a href="documento.html">Documento</a></li>
+                <li><a href="diritti-bambini.html">Children's Rights</a></li>
+                <li><a href="vittime-mafia.html">Vittime</a></li>
+                <li><a href="giudice-ragazzino.html">Il Giudice Ragazzino</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="content-section">
+            <h2>Storia della Mafia: Dalle Origini ai Giorni Nostri</h2>
+            
+            <h3>Le Radici Storiche</h3>
+            <p>Le origini delle organizzazioni mafiose in Italia risalgono al XIX secolo, con la formazione dello Stato unitario[1][2]. La <strong>Cosa Nostra</strong> siciliana, la <strong>Camorra</strong> campana e la <strong>'Ndrangheta</strong> calabrese emergono come risposta al vuoto istituzionale e al bisogno di protezione in contesti rurali[1].</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="1861">1861</span>
+                    <span class="stat-label">Primo omicidio mafioso documentato[5]</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="1950">1950</span>
+                    <span class="stat-label">Inizio sacco di Palermo[4]</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="1981">1981</span>
+                    <span class="stat-label">Seconda guerra di mafia[2]</span>
+                </div>
+            </div>
+
+            <h3>L'Evoluzione Post-Bellica</h3>
+            <p>Dopo la Seconda Guerra Mondiale, le mafie si inseriscono nella ricostruzione edilizia e nel traffico di stupefacenti[3]. Negli anni '50, figure come <strong>Lucky Luciano</strong> e <strong>Tommaso Buscetta</strong> creano reti transatlantiche per il narcotraffico[4].</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>📅 Anni '70-80</h3>
+                    <p>I Corleonesi guidati da Totò Riina scatenano una guerra interna, eliminando 1.000 rivali[2]</p>
+                </div>
+                <div class="card">
+                    <h3>💣 Stragi</h3>
+                    <p>1992: attentati a Falcone e Borsellino segnano l'attacco allo Stato[5]</p>
+                </div>
+            </div>
+
+            <h3>Cronologia Essenziale</h3>
+            <div class="content-section" style="background: #f8f9fa; padding: 2rem;">
+                <p><strong>1943:</strong> Sbarco alleato in Sicilia, mafia come intermediaria[1]</p>
+                <p><strong>1963:</strong> Prima Commissione Antimafia[1]</p>
+                <p><strong>1984:</strong> Pentiti come Buscetta collaborano con la giustizia[4]</p>
+                <p><strong>1993:</strong> Arresto di Totò Riina[5]</p>
+            </div>
+
+            <h3>Struttura Organizzativa</h3>
+            <p>Secondo il modello descritto dal giudice Caponnetto, la mafia si basa su[1]:</p>
+            <ul style="margin: 1rem 0 2rem 2rem;">
+                <li>Segretezza assoluta</li>
+                <li>Gerarchia verticistica</li>
+                <li>Legami familistici</li>
+                <li>Controllo del territorio</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Legalità e Giustizia. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Animazione contatori
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsGrid = document.querySelector('.stats-grid');
+        if (statsGrid) {
+            observer.observe(statsGrid);
+        }
+    </script>
+</body>
+</html>
